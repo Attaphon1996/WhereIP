@@ -7,11 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		049A25B46F9CE840502D43D7 /* Pods_WhereIP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D6AE7CC7BD9700F55BF395B /* Pods_WhereIP.framework */; };
 		78128D021EB3461400D2D224 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78128D011EB3461400D2D224 /* AppDelegate.swift */; };
 		78128D041EB3461400D2D224 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78128D031EB3461400D2D224 /* ViewController.swift */; };
 		78128D071EB3461400D2D224 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78128D051EB3461400D2D224 /* Main.storyboard */; };
 		78128D091EB3461400D2D224 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78128D081EB3461400D2D224 /* Assets.xcassets */; };
 		78128D0C1EB3461400D2D224 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78128D0A1EB3461400D2D224 /* LaunchScreen.storyboard */; };
+		78128D161EB3483700D2D224 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 78128D151EB3483700D2D224 /* GoogleService-Info.plist */; };
+		78128D181EB34DDD00D2D224 /* LoginedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78128D171EB34DDD00D2D224 /* LoginedViewController.swift */; };
+		78F92A091EB49DA900718206 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F92A081EB49DA900718206 /* HistoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,12 @@
 		78128D081EB3461400D2D224 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		78128D0B1EB3461400D2D224 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		78128D0D1EB3461400D2D224 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78128D151EB3483700D2D224 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		78128D171EB34DDD00D2D224 /* LoginedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginedViewController.swift; sourceTree = "<group>"; };
+		78F92A081EB49DA900718206 /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		9D6AE7CC7BD9700F55BF395B /* Pods_WhereIP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhereIP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AABA19588489DFBB672C38FB /* Pods-WhereIP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhereIP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhereIP/Pods-WhereIP.debug.xcconfig"; sourceTree = "<group>"; };
+		C559927E86F22FCE266CE322 /* Pods-WhereIP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhereIP.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhereIP/Pods-WhereIP.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +39,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				049A25B46F9CE840502D43D7 /* Pods_WhereIP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		12928AD636655569F535CBEF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9D6AE7CC7BD9700F55BF395B /* Pods_WhereIP.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		78128CF51EB3461400D2D224 = {
 			isa = PBXGroup;
 			children = (
 				78128D001EB3461400D2D224 /* WhereIP */,
 				78128CFF1EB3461400D2D224 /* Products */,
+				BE94A5B4E53E3382756FDF7F /* Pods */,
+				12928AD636655569F535CBEF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +76,25 @@
 			isa = PBXGroup;
 			children = (
 				78128D011EB3461400D2D224 /* AppDelegate.swift */,
+				78F92A081EB49DA900718206 /* HistoryViewController.swift */,
 				78128D031EB3461400D2D224 /* ViewController.swift */,
+				78128D171EB34DDD00D2D224 /* LoginedViewController.swift */,
 				78128D051EB3461400D2D224 /* Main.storyboard */,
 				78128D081EB3461400D2D224 /* Assets.xcassets */,
 				78128D0A1EB3461400D2D224 /* LaunchScreen.storyboard */,
 				78128D0D1EB3461400D2D224 /* Info.plist */,
+				78128D151EB3483700D2D224 /* GoogleService-Info.plist */,
 			);
 			path = WhereIP;
+			sourceTree = "<group>";
+		};
+		BE94A5B4E53E3382756FDF7F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AABA19588489DFBB672C38FB /* Pods-WhereIP.debug.xcconfig */,
+				C559927E86F22FCE266CE322 /* Pods-WhereIP.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +104,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 78128D101EB3461400D2D224 /* Build configuration list for PBXNativeTarget "WhereIP" */;
 			buildPhases = (
+				1015088E076E26C2E8EC7FB0 /* [CP] Check Pods Manifest.lock */,
 				78128CFA1EB3461400D2D224 /* Sources */,
 				78128CFB1EB3461400D2D224 /* Frameworks */,
 				78128CFC1EB3461400D2D224 /* Resources */,
+				3E488D6C54A36CE10E8A3144 /* [CP] Embed Pods Frameworks */,
+				817827FB90F956427A63267C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,6 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				78128D0C1EB3461400D2D224 /* LaunchScreen.storyboard in Resources */,
+				78128D161EB3483700D2D224 /* GoogleService-Info.plist in Resources */,
 				78128D091EB3461400D2D224 /* Assets.xcassets in Resources */,
 				78128D071EB3461400D2D224 /* Main.storyboard in Resources */,
 			);
@@ -131,13 +168,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1015088E076E26C2E8EC7FB0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3E488D6C54A36CE10E8A3144 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WhereIP/Pods-WhereIP-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		817827FB90F956427A63267C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WhereIP/Pods-WhereIP-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		78128CFA1EB3461400D2D224 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				78128D041EB3461400D2D224 /* ViewController.swift in Sources */,
+				78128D181EB34DDD00D2D224 /* LoginedViewController.swift in Sources */,
 				78128D021EB3461400D2D224 /* AppDelegate.swift in Sources */,
+				78F92A091EB49DA900718206 /* HistoryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +347,7 @@
 		};
 		78128D111EB3461400D2D224 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AABA19588489DFBB672C38FB /* Pods-WhereIP.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WhereIP/Info.plist;
@@ -272,6 +360,7 @@
 		};
 		78128D121EB3461400D2D224 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C559927E86F22FCE266CE322 /* Pods-WhereIP.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WhereIP/Info.plist;
@@ -301,6 +390,7 @@
 				78128D121EB3461400D2D224 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
